@@ -1,12 +1,17 @@
+import Image from "next/image";
+
 export default function HomePage() {
   return (
     <main className="flex min-h-dvh items-center justify-center bg-white px-6 py-10 text-[#212121]">
       <section className="w-full max-w-sm rounded-[28px] border border-black/10 bg-white p-6 text-center shadow-[0_16px_48px_rgba(33,33,33,0.08)]">
-        <div
-          aria-hidden="true"
-          className="mx-auto mb-6 flex size-20 items-center justify-center rounded-[24px] bg-[#FFC107] text-4xl shadow-[0_12px_32px_rgba(255,193,7,0.35)]"
-        >
-          🛵
+        <div className="mx-auto mb-6 flex size-20 items-center justify-center rounded-[24px] bg-[#FFC107] shadow-[0_12px_32px_rgba(255,193,7,0.35)]">
+          <Image
+            src="/icon.svg"
+            alt="Logo sementara Bandung Ride Radar"
+            width={56}
+            height={56}
+            priority
+          />
         </div>
         <p className="mb-3 text-xs font-semibold uppercase tracking-[0.24em] text-[#E53935]">
           Foundation Sprint
