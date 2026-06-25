@@ -16,6 +16,24 @@ Sebelum menulis kode, baca terlebih dahulu seluruh dokumen berikut secara beruru
 
 Jangan mengasumsikan kebutuhan proyek di luar yang dijelaskan pada dokumen tersebut.
 
+Urutan sprint resmi:
+
+1. Sprint 1 — Foundation
+2. Sprint 2 — UI Foundation
+3. Sprint 3 — Live Map
+4. Sprint 4 — Backend Foundation
+5. Sprint 5 — Intelligence Engine
+
+Mapping prompt operasional:
+
+- prompts/01_FOUNDATION.md = Sprint 1 — Foundation
+- prompts/02_UI.md = Sprint 2 — UI Foundation
+- prompts/03_MAP.md = Sprint 3 — Live Map
+- prompts/04_BACKEND.md = Sprint 4 — Backend Foundation
+- prompts/05_INTELLIGENCE.md = Sprint 5 — Intelligence Engine
+
+prompts/00_START_HERE.md bukan sprint, tetapi titik awal sesi.
+
 ---
 
 Role
