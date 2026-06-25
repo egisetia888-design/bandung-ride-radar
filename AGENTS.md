@@ -55,13 +55,23 @@ Development Workflow
 
 Selalu kerjakan satu sprint pada satu waktu.
 
-Urutan sprint:
+Urutan sprint resmi:
 
-1. Foundation
-2. UI Foundation
-3. Live Map
-4. Backend Foundation
-5. Intelligence Engine
+1. Sprint 1 — Foundation
+2. Sprint 2 — UI Foundation
+3. Sprint 3 — Live Map
+4. Sprint 4 — Backend Foundation
+5. Sprint 5 — Intelligence Engine
+
+Mapping prompt operasional:
+
+- prompts/01_FOUNDATION.md = Sprint 1 — Foundation
+- prompts/02_UI.md = Sprint 2 — UI Foundation
+- prompts/03_MAP.md = Sprint 3 — Live Map
+- prompts/04_BACKEND.md = Sprint 4 — Backend Foundation
+- prompts/05_INTELLIGENCE.md = Sprint 5 — Intelligence Engine
+
+prompts/00_START_HERE.md bukan sprint, tetapi titik awal setiap sesi pengembangan.
 
 Jangan mengimplementasikan sprint berikutnya sebelum sprint aktif selesai.
 

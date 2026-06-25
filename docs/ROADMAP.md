@@ -33,393 +33,147 @@ Selalu prioritaskan fitur yang memberikan nilai terbesar kepada pengguna.
 
 ---
 
-Milestone
+Official Sprint Sequence
 
-Phase 1
+Urutan sprint resmi MVP Bandung Ride Radar adalah:
 
-Project Foundation
+1. Sprint 1 — Foundation
+2. Sprint 2 — UI Foundation
+3. Sprint 3 — Live Map
+4. Sprint 4 — Backend Foundation
+5. Sprint 5 — Intelligence Engine
 
-Target:
-
-Repository siap dikembangkan.
-
-Output:
-
-- Next.js
-- TypeScript
-- Tailwind
-- shadcn/ui
-- ESLint
-- Prettier
-- PWA
-- Vercel
-
-Status:
-
-Belum dimulai.
+Setiap sprint harus selesai sebelum sprint berikutnya dimulai.
 
 ---
 
-Phase 2
+Operational Prompt Mapping
 
-Design System
+Prompt pada folder prompts/ adalah dokumen eksekusi operasional untuk sprint resmi.
 
-Target:
+- prompts/00_START_HERE.md bukan sprint; gunakan sebagai titik awal setiap sesi pengembangan.
+- prompts/01_FOUNDATION.md = Sprint 1 — Foundation
+- prompts/02_UI.md = Sprint 2 — UI Foundation
+- prompts/03_MAP.md = Sprint 3 — Live Map
+- prompts/04_BACKEND.md = Sprint 4 — Backend Foundation
+- prompts/05_INTELLIGENCE.md = Sprint 5 — Intelligence Engine
 
-Membangun seluruh komponen UI reusable.
-
-Output:
-
-- Button
-- Card
-- Badge
-- Bottom Sheet
-- Navigation
-- FAB
-- Search Bar
-- Loading
-- Empty State
-- Error State
-
-Status:
-
-Belum dimulai.
-
----
-
-Phase 3
-
-Interactive UI
-
-Target:
-
-Seluruh halaman MVP dapat dinavigasi.
-
-Output:
-
-- Splash
-- Live Map
-- Insight
-- Search Overlay
-- Settings
-
-Status:
-
-Belum dimulai.
-
----
-
-Phase 4
-
-Map Integration
-
-Target:
-
-Integrasi OpenStreetMap.
-
-Output:
-
-- MapLibre
-- Geolocation
-- Marker
-- Zoom
-- Current Position
-
-Status:
-
-Belum dimulai.
-
----
-
-Phase 5
-
-Spatial Engine
-
-Target:
-
-Membangun sistem grid H3.
-
-Output:
-
-- H3 Grid
-- Spatial Index
-- Heat Layer
-- Cell Selection
-
-Status:
-
-Belum dimulai.
-
----
-
-Phase 6
-
-Prediction Engine
-
-Target:
-
-Rule-Based Scoring.
-
-Output:
-
-- Heat Score
-- Confidence Score
-- Recommendation Engine
-
-Status:
-
-Belum dimulai.
-
----
-
-Phase 7
-
-Insight Engine
-
-Target:
-
-Menjelaskan alasan rekomendasi.
-
-Output:
-
-- Weather Insight
-- Traffic Insight
-- Time Insight
-- Land Use Insight
-
-Status:
-
-Belum dimulai.
-
----
-
-Phase 8
-
-Backend
-
-Target:
-
-API siap digunakan.
-
-Output:
-
-- FastAPI
-- PostgreSQL
-- PostGIS
-- Redis
-
-Status:
-
-Belum dimulai.
-
----
-
-Phase 9
-
-Historical Data
-
-Target:
-
-Penyimpanan histori.
-
-Output:
-
-- Database
-- Trend
-- Timeline
-- Analytics
-
-Status:
-
-Belum dimulai.
-
----
-
-Phase 10
-
-Machine Learning
-
-Target:
-
-Mengganti Rule-Based menjadi AI Prediction apabila data historis sudah memadai.
-
-Output:
-
-- Training Pipeline
-- Validation
-- Prediction API
-
-Status:
-
-Belum dimulai.
-
----
-
-Phase 11
-
-Testing
-
-Target:
-
-Menjamin kualitas aplikasi.
-
-Output:
-
-- Unit Test
-- Integration Test
-- UI Test
-- Performance Test
-
-Status:
-
-Belum dimulai.
-
----
-
-Phase 12
-
-Public Beta
-
-Target:
-
-Rilis publik.
-
-Output:
-
-- Vercel Production
-- Dokumentasi
-- GitHub Release
-- Feedback
-
-Status:
-
-Belum dimulai.
+Tidak ada prompt sprint lain yang termasuk dalam urutan MVP resmi.
 
 ---
 
 Sprint Backlog
 
-Sprint 1
+Sprint 1 — Foundation
 
-Project Foundation
+Target:
 
-Durasi:
-
-1 sesi.
+Repository siap dikembangkan.
 
 Deliverables:
 
-- Struktur proyek.
-- Konfigurasi dasar.
-- Deploy awal ke Vercel.
+- Next.js
+- TypeScript
+- Tailwind CSS
+- shadcn/ui
+- ESLint
+- Prettier
+- Konfigurasi PWA dasar
+- Struktur direktori awal
+- README dan .env.example
+
+Status:
+
+Belum dimulai.
 
 ---
 
-Sprint 2
+Sprint 2 — UI Foundation
 
-UI Foundation
+Target:
+
+Membangun fondasi antarmuka dan komponen reusable berdasarkan DESIGN.md.
 
 Deliverables:
 
-- Theme.
-- Typography.
-- Color.
-- Design Tokens.
+- Theme global
+- Typography
+- Design tokens
+- Reusable components
+- Responsive layout
+- Home placeholder
+
+Status:
+
+Belum dimulai.
 
 ---
 
-Sprint 3
+Sprint 3 — Live Map
 
-Core Components
+Target:
+
+Mengimplementasikan halaman utama berbasis peta interaktif.
 
 Deliverables:
 
-- Button.
-- Card.
-- Badge.
-- FAB.
-- Bottom Sheet.
+- MapLibre
+- Tile OpenStreetMap
+- Geolocation
+- Marker lokasi pengguna
+- Default lokasi Bandung
+- Search Bar placeholder
+- Bottom Navigation aktif
+
+Status:
+
+Belum dimulai.
 
 ---
 
-Sprint 4
+Sprint 4 — Backend Foundation
 
-Live Map
+Target:
+
+Membangun fondasi backend dan infrastruktur API.
 
 Deliverables:
 
-- Peta.
-- Marker.
-- Geolocation.
+- FastAPI
+- Struktur backend modular
+- Endpoint dasar
+- PostgreSQL + PostGIS
+- Redis
+- CORS
+- Swagger UI dan ReDoc
+- Docker Compose
+
+Status:
+
+Belum dimulai.
 
 ---
 
-Sprint 5
+Sprint 5 — Intelligence Engine
 
-Heatmap
+Target:
 
-Deliverables:
-
-- Grid H3.
-- Heat Layer.
-
----
-
-Sprint 6
-
-Recommendation
+Membangun sistem rekomendasi lokasi pertama menggunakan Rule-Based Scoring dan data publik.
 
 Deliverables:
 
-- Heat Score.
-- Confidence Score.
-- Recommendation Card.
+- Rule-Based Scoring
+- Heat Score
+- Confidence Score
+- Recommendation Engine
+- Insight Engine
+- Action Recommendation
+- Ranking
+- Integrasi frontend dan backend
 
----
+Status:
 
-Sprint 7
-
-Insight
-
-Deliverables:
-
-- Insight Panel.
-- Action Recommendation.
-
----
-
-Sprint 8
-
-Backend
-
-Deliverables:
-
-- API.
-- Database.
-
----
-
-Sprint 9
-
-Optimization
-
-Deliverables:
-
-- Caching.
-- Performance.
-- Offline Mode.
-
----
-
-Sprint 10
-
-Beta
-
-Deliverables:
-
-- Testing.
-- Bug Fix.
-- Release Candidate.
+Belum dimulai.
 
 ---
 
@@ -439,8 +193,11 @@ Setiap sprint dianggap selesai apabila:
 
 Future Roadmap
 
-Setelah MVP selesai, pengembangan dapat dilanjutkan dengan:
+Item berikut berada di luar lima sprint MVP resmi dan hanya boleh dikerjakan setelah Sprint 5 — Intelligence Engine selesai atau setelah roadmap diperbarui secara eksplisit:
 
+- Public Beta.
+- Caching dan optimasi lanjutan.
+- Offline mode lanjutan.
 - Crowdsourcing data.
 - AI Prediction berbasis histori.
 - Prediksi musiman.

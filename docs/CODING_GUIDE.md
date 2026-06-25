@@ -79,6 +79,34 @@ Linting
 
 ---
 
+Dependency Policy per Sprint
+
+Dependency harus dipasang sesuai kebutuhan sprint aktif. Jangan memasang dependency untuk sprint lanjutan sebelum sprint tersebut dimulai, kecuali ada instruksi eksplisit.
+
+Sprint 1 - Project Foundation
+
+Dependency dan setup yang boleh dipasang pada Sprint 1:
+
+- Next.js 15
+- React 19
+- TypeScript
+- Tailwind CSS v4
+- shadcn/ui setup
+- ESLint
+- Prettier
+
+Dependency Sprint Lanjutan
+
+Dependency berikut hanya boleh dipasang pada sprint lanjutan yang relevan, kecuali ada instruksi eksplisit:
+
+- MapLibre GL
+- Zustand
+- TanStack Query
+- Vitest
+- Playwright
+
+---
+
 General Rules
 
 Selalu gunakan TypeScript.
@@ -99,7 +127,7 @@ Hindari callback yang tidak perlu.
 
 Project Structure
 
-Ikuti struktur berikut.
+Bandung Ride Radar menggunakan satu aplikasi Next.js di root repository, bukan monorepo. Ikuti struktur berikut.
 
 app/
 components/
@@ -110,6 +138,8 @@ services/
 types/
 public/
 styles/
+docs/
+prompts/
 
 Jangan membuat folder baru tanpa alasan yang jelas.
 

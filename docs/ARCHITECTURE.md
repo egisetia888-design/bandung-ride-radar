@@ -109,6 +109,8 @@ High Level Architecture
 
 Frontend Architecture
 
+Bandung Ride Radar menggunakan satu aplikasi Next.js di root repository, bukan monorepo. Semua folder frontend utama berada langsung di root repository.
+
 Framework:
 
 Next.js 15
@@ -128,6 +130,8 @@ Client Components hanya digunakan ketika:
 ---
 
 Frontend Layers
+
+Root repository:
 
 app/
 

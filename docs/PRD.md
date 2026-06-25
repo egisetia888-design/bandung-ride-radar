@@ -263,41 +263,29 @@ MVP dianggap berhasil apabila:
 
 ---
 
-12. Development Strategy
+12. Official Sprint Sequence
 
 Pengembangan dilakukan menggunakan sprint.
 
-Sprint 1
+Urutan sprint resmi untuk MVP adalah:
 
-Foundation
+1. Sprint 1 — Foundation
+2. Sprint 2 — UI Foundation
+3. Sprint 3 — Live Map
+4. Sprint 4 — Backend Foundation
+5. Sprint 5 — Intelligence Engine
 
-Sprint 2
+Mapping prompt operasional:
 
-UI
+- prompts/01_FOUNDATION.md = Sprint 1 — Foundation
+- prompts/02_UI.md = Sprint 2 — UI Foundation
+- prompts/03_MAP.md = Sprint 3 — Live Map
+- prompts/04_BACKEND.md = Sprint 4 — Backend Foundation
+- prompts/05_INTELLIGENCE.md = Sprint 5 — Intelligence Engine
 
-Sprint 3
+prompts/00_START_HERE.md bukan sprint; file tersebut hanya panduan awal sesi.
 
-Map
-
-Sprint 4
-
-Heatmap
-
-Sprint 5
-
-Prediction
-
-Sprint 6
-
-Backend
-
-Sprint 7
-
-Testing
-
-Sprint 8
-
-Beta
+Tidak ada sprint lain yang boleh dianggap bagian dari MVP resmi tanpa pembaruan eksplisit pada PRD dan ROADMAP.
 
 ---
 
