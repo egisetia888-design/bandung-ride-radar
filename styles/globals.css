@@ -3,8 +3,31 @@
 :root {
   --background: #ffffff;
   --foreground: #212121;
-  --primary: #ffc107;
-  --accent: #e53935;
+  --radar-white: #ffffff;
+  --radar-yellow: #ffc107;
+  --radar-black: #212121;
+  --radar-red: #e53935;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-radar-white: var(--radar-white);
+  --color-radar-yellow: var(--radar-yellow);
+  --color-radar-black: var(--radar-black);
+  --color-radar-red: var(--radar-red);
+  --font-sans: Inter, system-ui, sans-serif;
+  --text-heading: 22px;
+  --text-subheading: 18px;
+  --text-body: 15px;
+  --text-caption: 12px;
+  --radius-card: 20px;
+  --radius-button: 16px;
+  --radius-sheet: 28px;
+  --radius-search: 18px;
+  --shadow-soft: 0 10px 30px rgb(33 33 33 / 8%);
+  --shadow-raised: 0 -10px 30px rgb(33 33 33 / 10%);
+  --shadow-app: 0 0 0 1px rgb(33 33 33 / 6%);
 }
 
 * {
@@ -36,6 +59,12 @@ a {
 }
 
 button,
-a {
+a,
+input {
   -webkit-tap-highlight-color: transparent;
+}
+
+button,
+input {
+  font: inherit;
 }
