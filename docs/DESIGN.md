@@ -408,6 +408,14 @@ Tidak membuat dashboard terpisah.
 
 Live Map adalah Home.
 
+Catatan sprint:
+
+Pada Sprint 1 — Project Foundation, halaman Home sederhana hanya berfungsi sebagai placeholder development untuk memvalidasi fondasi proyek, metadata, styling dasar, dan kesiapan deployment.
+
+Placeholder tersebut bukan keputusan final UI/UX dan tidak boleh dikembangkan menjadi dashboard terpisah.
+
+Pada sprint Live Map, halaman Home harus diganti menjadi Live Map sesuai prinsip “Live Map adalah Home”.
+
 ---
 
 Live Map Layout

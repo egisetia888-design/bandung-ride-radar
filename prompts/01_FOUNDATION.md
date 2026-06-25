@@ -115,13 +115,19 @@ Belum perlu membuat halaman fitur.
 
 7. Home Page
 
-Buat halaman Home sederhana.
+Buat halaman Home sederhana sebagai placeholder development Sprint 1.
+
+Placeholder ini hanya digunakan untuk memvalidasi fondasi proyek, metadata, styling dasar, dan kesiapan deployment.
 
 Isi halaman cukup:
 
 - Logo sementara
 - Nama aplikasi
 - Informasi bahwa proyek sedang dalam tahap pengembangan
+
+Halaman ini bukan keputusan final UI/UX dan tidak boleh dikembangkan menjadi dashboard terpisah.
+
+Pada sprint Live Map, Home akan diganti menjadi Live Map sesuai prinsip “Live Map adalah Home” pada docs/DESIGN.md.
 
 Tidak perlu peta.
 
