@@ -1,202 +1,183 @@
-Bandung Ride Radar
+# Bandung Ride Radar
 
-«Open-source Progressive Web App (PWA) untuk membantu pengemudi motor ojek online menemukan area dengan probabilitas permintaan relatif tertinggi menggunakan data publik dan teknologi GIS.»
+Bandung Ride Radar adalah **Progressive Web App (PWA) berbasis GIS** untuk membantu pengemudi motor ojek online menemukan area dengan peluang permintaan relatif tinggi menggunakan data publik dan teknologi open-source.
 
----
-
-Project Status
-
-🚧 Under Active Development
-
-Current Version: MVP
-
-Status: Planning & Foundation
+Aplikasi ini **bukan platform ride-hailing** dan tidak menggunakan data internal Gojek, Grab, Maxim, inDrive, atau layanan serupa.
 
 ---
 
-Vision
+## Project Status
 
-Bandung Ride Radar bukan aplikasi ride-hailing.
+🚧 **Under Active Development**
+
+- Current Version: MVP Foundation
+- Current Sprint: Sprint 1 — Project Foundation
+- Status: Next.js foundation setup
+
+---
+
+## Vision
 
 Bandung Ride Radar adalah Decision Support System (DSS) yang membantu pengemudi mengambil keputusan berdasarkan analisis spasial, temporal, dan kontekstual menggunakan data publik.
 
-Seluruh sistem dibangun menggunakan teknologi open-source dengan tujuan dapat dikembangkan oleh individu maupun komunitas.
+Target MVP adalah aplikasi yang ringan, mobile-first, dapat dipasang sebagai PWA, dan tetap dapat dikembangkan secara bertahap menuju fitur peta, heatmap, rekomendasi, insight, dan backend intelligence engine.
 
 ---
 
-Goals
+## Main Goals
 
 - Mengurangi waktu idle driver.
 - Membantu menentukan titik tunggu terbaik.
-- Memvisualisasikan peluang permintaan melalui heatmap.
-- Menggunakan data publik.
-- Tetap ringan dan dapat dijalankan pada perangkat Android kelas menengah.
+- Memvisualisasikan peluang permintaan melalui heatmap pada sprint lanjutan.
+- Menggunakan data publik dan open-source.
+- Tetap ringan untuk perangkat Android kelas menengah.
 
 ---
 
-Tech Stack
+## Tech Stack
 
-Frontend
+### Frontend
 
-- Next.js
-- React
+- Next.js 15
+- React 19
 - TypeScript
-- Tailwind CSS
+- Tailwind CSS v4
 - shadcn/ui
-- MapLibre GL
 
-Backend
+### Planned Frontend GIS
+
+- MapLibre GL
+- OpenStreetMap
+- H3
+
+### Planned Backend
 
 - FastAPI
 - PostgreSQL
 - PostGIS
 - Redis
 
-GIS
+### Planned External Data Sources
 
 - OpenStreetMap
 - Overpass API
-- H3
+- Open-Meteo
 - OSRM
-
-Deployment
-
-- Vercel
-- Railway / Render
+- BPS / Kalender Nasional jika memungkinkan
 
 ---
 
-Repository Structure
+## Repository Structure
 
+```text
 bandung-ride-radar/
-
-docs/
-prompts/
-
-apps/
-├── web/
-└── backend/
-
-packages/
-
-public/
-
----
-
-Documentation
-
-Baca dokumen berikut secara berurutan.
-
-File| Deskripsi
-docs/PRD.md| Product Requirements
-docs/CODING_GUIDE.md| Aturan implementasi
-docs/DESIGN.md| UI & UX
-docs/ARCHITECTURE.md| Arsitektur sistem
-docs/ROADMAP.md| Roadmap pengembangan
+├── app/                 # Next.js App Router routes and root layout
+├── components/          # Reusable UI components
+├── docs/                # Product and technical documentation
+├── features/            # Feature modules for future sprints
+├── hooks/               # Reusable React hooks
+├── lib/                 # Shared utilities
+├── prompts/             # Sprint prompts and development workflow
+├── public/              # Static assets and PWA manifest
+├── services/            # API and external service integrations
+├── styles/              # Global styles
+└── types/               # Global TypeScript types
+```
 
 ---
 
-Development Workflow
+## Getting Started
 
-Seluruh implementasi dilakukan menggunakan prompt pada folder:
+### Prerequisites
 
-prompts/
+- Node.js 20 or newer
+- npm 10 or newer
 
-Urutan pengerjaan:
+### Install dependencies
 
-00_START_HERE
+```bash
+npm install
+```
 
-↓
+### Run development server
 
-01_FOUNDATION
+```bash
+npm run dev
+```
 
-↓
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-02_UI
+### Build production bundle
 
-↓
+```bash
+npm run build
+```
 
-03_MAP
+### Run production server
 
-↓
+```bash
+npm run start
+```
 
-04_BACKEND
+### Lint
 
-↓
+```bash
+npm run lint
+```
 
-05_INTELLIGENCE
+### Type check
 
-Setiap sprint harus selesai sebelum melanjutkan sprint berikutnya.
+```bash
+npm run typecheck
+```
 
----
+### Format check
 
-Development Principles
-
-- Mobile First
-- Open Source First
-- Feature First
-- API First
-- Performance First
-- Explainable Prediction
-- Progressive Enhancement
-
----
-
-Data Policy
-
-Bandung Ride Radar hanya menggunakan:
-
-- Data publik
-- Data open-source
-- Data yang diberikan pengguna secara sukarela (fase berikutnya)
-
-Aplikasi tidak menggunakan data internal platform ride-hailing.
+```bash
+npm run format:check
+```
 
 ---
 
-Contributing
+## Environment Variables
 
-Sebelum menulis kode:
+Copy the example environment file before running the app locally:
 
-1. Baca seluruh dokumentasi.
-2. Ikuti Coding Guide.
-3. Kerjakan sesuai sprint aktif.
-4. Pastikan build berhasil.
-5. Pastikan lint dan type check berhasil.
+```bash
+cp .env.example .env.local
+```
 
----
-
-Roadmap
-
-- Foundation
-- UI
-- Live Map
-- Backend
-- Intelligence Engine
-- Beta
-
-Lihat detail pada:
-
-docs/ROADMAP.md
+Do not commit real API keys or secrets.
 
 ---
 
-License
+## Development Workflow
 
-Kode sumber dirilis menggunakan lisensi MIT.
+Implementation follows the sprint prompts in `prompts/`:
 
-Lisensi data mengikuti ketentuan masing-masing penyedia data.
+1. `00_START_HERE.md`
+2. `01_FOUNDATION.md`
+3. `02_UI.md`
+4. `03_MAP.md`
+5. `04_BACKEND.md`
+6. `05_INTELLIGENCE.md`
+
+Each sprint must be completed before starting the next sprint.
 
 ---
 
-Notes for AI Assistants
+## Data Policy
 
-Jika repository ini dibuka menggunakan Codex, ChatGPT, Claude Code, Gemini CLI, atau AI coding assistant lainnya:
+Bandung Ride Radar only uses:
 
-1. Mulailah dari "docs/PRD.md".
-2. Ikuti "docs/CODING_GUIDE.md".
-3. Jangan mengubah arsitektur tanpa memperbarui "docs/ARCHITECTURE.md".
-4. Kerjakan hanya sprint yang sedang aktif.
-5. Jangan menambahkan fitur di luar ruang lingkup sprint.
+- public data,
+- open-source data,
+- voluntary user-provided data in future phases.
 
-Repository ini dirancang untuk dikembangkan secara bertahap melalui sprint yang kecil, terdokumentasi, dan dapat diuji.
+If data is not available, temporary mock data must be clearly marked with `TODO` and must not be claimed as real-world or ride-hailing platform data.
+
+---
+
+## License
+
+Code is released under the MIT License. Data licenses follow each source provider.
