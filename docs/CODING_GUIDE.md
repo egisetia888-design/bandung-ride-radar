@@ -99,7 +99,7 @@ Hindari callback yang tidak perlu.
 
 Project Structure
 
-Ikuti struktur berikut.
+Bandung Ride Radar menggunakan satu aplikasi Next.js di root repository, bukan monorepo. Ikuti struktur berikut.
 
 app/
 components/
@@ -110,6 +110,8 @@ services/
 types/
 public/
 styles/
+docs/
+prompts/
 
 Jangan membuat folder baru tanpa alasan yang jelas.
 

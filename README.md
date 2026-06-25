@@ -68,18 +68,20 @@ Deployment
 
 Repository Structure
 
+Bandung Ride Radar menggunakan satu aplikasi Next.js di root repository. Struktur awal sprint Foundation adalah:
+
 bandung-ride-radar/
-
-docs/
-prompts/
-
-apps/
-├── web/
-└── backend/
-
-packages/
-
-public/
+├── app/
+├── components/
+├── features/
+├── hooks/
+├── lib/
+├── services/
+├── types/
+├── public/
+├── styles/
+├── docs/
+└── prompts/
 
 ---
 

@@ -79,7 +79,7 @@ Service Worker dapat ditambahkan pada sprint berikutnya jika belum diperlukan.
 
 5. Struktur Folder
 
-Buat struktur proyek sesuai ARCHITECTURE.md.
+Buat struktur proyek sesuai ARCHITECTURE.md. Bandung Ride Radar menggunakan satu aplikasi Next.js di root repository, bukan monorepo.
 
 Minimal:
 
