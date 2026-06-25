@@ -1,0 +1,18 @@
+{
+  "name": "Bandung Ride Radar",
+  "short_name": "Ride Radar",
+  "description": "PWA berbasis GIS untuk membantu pengemudi menemukan area peluang permintaan relatif tinggi menggunakan data publik.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FFFFFF",
+  "theme_color": "#FFC107",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
