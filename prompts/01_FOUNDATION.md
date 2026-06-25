@@ -1,6 +1,6 @@
 01_FOUNDATION.md
 
-Sprint 1 — Project Foundation
+Sprint 1 — Foundation
 
 Objective
 

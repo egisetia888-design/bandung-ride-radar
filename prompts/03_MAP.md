@@ -1,6 +1,6 @@
 03_MAP.md
 
-Sprint 3 — Live Map Foundation
+Sprint 3 — Live Map
 
 Objective
 

@@ -102,29 +102,22 @@ Seluruh implementasi dilakukan menggunakan prompt pada folder:
 
 prompts/
 
-Urutan pengerjaan:
+Urutan sprint resmi:
 
-00_START_HERE
+1. Sprint 1 — Foundation
+2. Sprint 2 — UI Foundation
+3. Sprint 3 — Live Map
+4. Sprint 4 — Backend Foundation
+5. Sprint 5 — Intelligence Engine
 
-↓
+Mapping prompt operasional:
 
-01_FOUNDATION
-
-↓
-
-02_UI
-
-↓
-
-03_MAP
-
-↓
-
-04_BACKEND
-
-↓
-
-05_INTELLIGENCE
+- prompts/00_START_HERE.md bukan sprint; gunakan sebagai titik awal setiap sesi pengembangan.
+- prompts/01_FOUNDATION.md = Sprint 1 — Foundation
+- prompts/02_UI.md = Sprint 2 — UI Foundation
+- prompts/03_MAP.md = Sprint 3 — Live Map
+- prompts/04_BACKEND.md = Sprint 4 — Backend Foundation
+- prompts/05_INTELLIGENCE.md = Sprint 5 — Intelligence Engine
 
 Setiap sprint harus selesai sebelum melanjutkan sprint berikutnya.
 
@@ -168,12 +161,13 @@ Sebelum menulis kode:
 
 Roadmap
 
-- Foundation
-- UI
-- Live Map
-- Backend
-- Intelligence Engine
-- Beta
+- Sprint 1 — Foundation
+- Sprint 2 — UI Foundation
+- Sprint 3 — Live Map
+- Sprint 4 — Backend Foundation
+- Sprint 5 — Intelligence Engine
+
+Beta berada di luar lima sprint MVP resmi dan hanya dikerjakan setelah Intelligence Engine selesai.
 
 Lihat detail pada:
 
